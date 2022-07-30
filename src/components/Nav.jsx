@@ -15,8 +15,8 @@ const Nav = (props) => {
         console.log(user.user)
 
         axios.post(`https://reqres.in/api/login`, {
-            "email": user.user.email, 
-            "password": user.user.password
+            "email": user.email, 
+            "password": user.password
         })
         .then((res) => {
             console.log(res);
